@@ -7,7 +7,7 @@ echo "current branch= $current_branch"
 # 执行 Git 命令
 #git add -u
 git add .
-git commit -m "$commit_message $(date)"
+git commit -m "$commit_message $(date '+%b %d')"
 git push origin $current_branch
 
 echo "Git 命令已执行完毕。"
